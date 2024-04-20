@@ -1,5 +1,4 @@
 import "./styles/App.css";
-import Products from "./Products.jsx";
 import Product from "./Product.jsx";
 import Aside from "./Aside.jsx";
 import Marco from "./assets/marco-aurelio.jpg";
@@ -14,16 +13,10 @@ function App() {
       <h2 className="h2-app">Decoración para el hogar</h2>
       <main className="grid-container">
         <section className="container-productos">
-          <div className="productos">
-            <Products />
-          </div>
-          <div className="productos">
-            <Products />
-          </div>
+            <Product />
+            <Product />
         </section>
-        <div className="aside">
           <Aside />
-        </div>
       </main>
     </>
   );
