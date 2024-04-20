@@ -1,4 +1,4 @@
-import "./styles/Aside.css"
+import "./styles/App.css"
 
 function Aside() {
   return (

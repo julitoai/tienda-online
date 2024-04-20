@@ -1,3 +1,5 @@
+/* App */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,7 +17,11 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "producto producto producto producto aside";
+  gap: 1.5rem;
 }
 
 .h2-app {
@@ -23,3 +29,52 @@
   color: #242422;
   padding: 2rem;
 }
+
+/* App */
+
+/* Product */
+
+.img-producto {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.contenedor {
+  display: flex;
+  height: 300px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  background-color: #242422;
+  border: 3px solid #000;
+  border-radius: 10px;
+  padding: 10px 0 10px;
+  box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  grid-area: producto;
+  grid-column: 1 / 4;
+}
+
+/* Product */
+
+/* Aside */
+
+.contenedor-aside {
+  background-color: #242422;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 4px 6px 10px 0px rgba(0,0,0,0.75);
+  height: min-content;
+  grid-area: aside;
+}
+
+.contenedor-aside ul li {
+  list-style: none;
+}
+
+.contenedor-aside ul {
+  padding: 0.5rem;
+}
+
+/* Aside */
+
